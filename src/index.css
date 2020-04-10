@@ -1,13 +1,117 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.alert p {
+  margin-bottom: 0!important;
+}
+body {
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header {
+  margin: 30px 0;
+}
+.contenido-principal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  font-size: 4.8rem!important;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  color:#004e92;
+  margin-bottom:30px;
+  font-size:3rem!important;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section {
+  display:'flex';
+  flexDirection:'row';
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+section {
+  display: flex;
+  flexDirection: row;
+}
+
+#sendform {
+  background: white;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#sendform input {
+  border: solid;
+  padding: 10px;
+  width: 95%;
+  border-radius: 20px;
+  margin-right: 0.25%;
+  border-width: 1px;
+}
+#sendform button {
+  background: rgb(130, 224, 255);
+  border: none;
+  padding: 10px 0 10px 0;
+  border-radius: 20px;
+}
+#messages {
+  margin-bottom: 45px;
+  list-style-type: none;
+  height: 95%;
+  overflow: scroll;
+  flex: 3;
+}
+#messages li {
+  padding: 5px 10px;
+  padding-left: 30px;
+  background: 	#483D8B;
+  color: white;
+}
+#messages li:nth-child(odd) {
+  background: #eee;
+  color: #000
+}
+#online {
+  padding-left: 5px;
+  margin-left: auto;
+  margin-bottom: 45px;
+  flex: 1;
+  list-style: none;
+  overflow: scroll;
+  color: white
+}
+#online li {
+  margin-left: 25px;
+}
+.innermsg {
+  padding-left: 20px;
+}
+
+.update {
+  text-align: center;
+  vertical-align: middle;
+  background: red;
+  color:white
 }

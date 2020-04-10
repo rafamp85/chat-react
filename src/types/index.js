@@ -1,0 +1,2 @@
+export const AUTENTICAR_ROOM = 'AUTENTICAR_ROOM';
+export const AGREGAR_ROOM = 'AGREGAR_ROOM';
